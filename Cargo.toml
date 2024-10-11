@@ -1,3 +1,4 @@
 [workspace]
+resolver = "2"
 
-members = ["crusty-calculator", "crusty-math"]
+members = ["calc", "calc-cli", "calc-server"]

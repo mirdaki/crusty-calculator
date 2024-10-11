@@ -1,0 +1,8 @@
+[package]
+name = "calc-cli"
+version = "0.1.0"
+edition = "2021"
+default-run = "calc-cli"
+
+[dependencies]
+calc = { path = "../calc" }

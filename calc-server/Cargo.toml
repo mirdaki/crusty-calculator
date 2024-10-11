@@ -1,0 +1,10 @@
+[package]
+name = "calc-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+calc = { path = "../calc" }
+axum = "0.7.5"
+tokio = { version = "1.39.3", features = ["rt-multi-thread"] }
+serde = { version = "1.0.208", features = ["derive"] }
