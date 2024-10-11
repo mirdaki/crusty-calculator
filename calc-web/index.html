@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vanilla JS Rust Calc</title>
+</head>
+
+<body>
+    <h1>Vanilla JS Rust Calc</h1>
+    <p>Open the console to see the output</p>
+    <script type="module">
+        import init, {
+            sum,
+            subtract,
+            multiply,
+            divide,
+        } from "../target/pkg-web/calc.js";
+
+        async function run() {
+            await init();
+            console.log("1 + 2: ", sum(1, 2));
+            console.log("1 - 2: ", subtract(1, 2));
+            console.log("1 * 2: ", multiply(1, 2));
+            console.log("1 / 2: ", divide(1, 2)); // 0 As the rust function is working with integers, we gonna receive 0 instead of 0.5
+        }
+
+        run();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+[package]
+name = "calc"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# Need the first for WASM and the second for native Rust libaries
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.93"
